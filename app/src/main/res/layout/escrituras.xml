@@ -1,0 +1,449 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Round rectangle overlay -->
+        <View
+            android:id="@+id/round_rect"
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:background="@color/black"
+            android:layout_alignParentBottom="true" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/fn">
+
+            <ImageButton
+                android:id="@+id/atras"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                android:layout_alignParentStart="true"
+                android:background="@null"
+                android:onClick="myButtonClickHandler"
+                android:padding="16dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Escrituras"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10sp"
+                android:layout_marginHorizontal="320sp"
+                android:hint="0"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+
+        </RelativeLayout>
+        <!-- Your existing layout code wrapped in a ScrollView -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/edittext_rounded_bg"
+                    android:padding="5dp">
+
+                    <LinearLayout
+
+                        android:id="@+id/i"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Municipio"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/txtmunicipio"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/rounded"
+                            android:drawablePadding="8dp"
+                            android:drawableTint="#AD84C3"
+                            android:hint="Ingrese el municipio"
+                            android:padding="6dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:id="@+id/a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/i"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Acto"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/txtacto"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/rounded"
+                            android:drawablePadding="8dp"
+                            android:drawableTint="#AD84C3"
+                            android:hint="Ingrese el acto"
+                            android:padding="6dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:id="@+id/b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/a"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Nombre del cliente"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <EditText
+
+                            android:id="@+id/txtcliente"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/rounded"
+                            android:drawableTint="#AD84C3"
+                            android:hint="Ingrese el nombre del cliente"
+                            android:padding="6dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:id="@+id/c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/b"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="No. de Escritura"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <EditText
+
+                            android:id="@+id/txtnoescritura"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/rounded"
+                            android:hint="Ingrese la número de escritura"
+                            android:padding="6dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:id="@+id/ba"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/c"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Fecha de escritura"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <EditText
+
+                            android:id="@+id/txtfechaescritura"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/rounded"
+                            android:hint="Ingrese fecha de escritura"
+                            android:inputType="date"
+                            android:padding="6dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:id="@+id/ba1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ba"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Folio"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/txtfolio"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/rounded"
+                            android:hint="Introduce el folio"
+                            android:padding="6dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:id="@+id/ba2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ba1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Traslado"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/txttraslado"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/rounded"
+                            android:hint="si / no"
+                            android:padding="6dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:id="@+id/ba3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ba2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Registro"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/txtregistro"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/rounded"
+                            android:hint="si / no"
+                            android:padding="6dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:id="@+id/ba4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ba3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Gestor"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/txtgestor"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/rounded"
+                            android:hint="Ingrese gestor"
+                            android:padding="6dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/agregar"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/agregar" />
+
+                    <ImageButton
+                        android:id="@+id/eliminar"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/eliminar"
+                        android:layout_margin="1dp" />
+
+                    <ImageButton
+                        android:id="@+id/actualizar"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/actualizar"
+                        android:layout_margin="1dp" />
+
+                    <ImageButton
+                        android:id="@+id/buscar"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/buscar"
+                        android:layout_margin="1dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

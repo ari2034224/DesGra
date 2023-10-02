@@ -39,7 +39,7 @@ public class menu3 extends AppCompatActivity {
         escrituras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent escrito = new Intent(menu3.this, menu3.class);
+                Intent escrito = new Intent(menu3.this, escrituras.class);
                 startActivity(escrito);
             }
         });
@@ -47,7 +47,7 @@ public class menu3 extends AppCompatActivity {
         archivo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent arch = new Intent(menu3.this, menu2.class);
+                Intent arch = new Intent(menu3.this, archivo.class);
                 startActivity(arch);
             }
         });

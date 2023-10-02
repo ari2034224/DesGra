@@ -13,6 +13,21 @@
         android:theme="@style/Theme.DesGra"
         tools:targetApi="31">
         <activity
+            android:name=".ganancias"
+            android:exported="false" />
+        <activity
+            android:name=".gastos"
+            android:exported="false" />
+        <activity
+            android:name=".ventas"
+            android:exported="false" />
+        <activity
+            android:name=".archivo"
+            android:exported="false" />
+        <activity
+            android:name=".escrituras"
+            android:exported="false" />
+        <activity
             android:name=".menu3"
             android:exported="false" />
         <activity
